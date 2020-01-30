@@ -10,7 +10,7 @@ position: relative;
 @include centered;
 }
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,800,900");
 [class^="swiper-button-"] {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -597,20 +597,20 @@ input {
 }
 
 /* Accordion styles */
-.tabs {
+.Acctabs {
   border-radius: 8px;
   overflow: hidden;
   -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
 
-.tab {
+.Acctabs .tab {
   width: 100%;
   color: white;
   overflow: hidden;
 }
 
-.tab-label {
+.Acctabs .tab-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,11 +624,11 @@ input {
   /* Icon */
 }
 
-.tab-label:hover {
+.Acctabs .tab-label:hover {
   background: #1a252f;
 }
 
-.tab-label::after {
+.Acctabs .tab-label::after {
   content: "\276F";
   width: 1em;
   height: 1em;
@@ -637,7 +637,7 @@ input {
   transition: all .35s;
 }
 
-.tab-content {
+.Acctabs .tab-content {
   max-height: 0;
   padding: 0 1em;
   color: #2c3e50;
@@ -646,7 +646,7 @@ input {
   transition: all .35s;
 }
 
-.tab-close {
+.Acctabs .tab-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,20 +659,20 @@ input {
   cursor: pointer;
 }
 
-.tab-close:hover {
+.Acctabs .tab-close:hover {
   background: #1a252f;
 }
 
-input:checked + .tab-label {
+.Acctabs input:checked + .tab-label {
   background: #1a252f;
 }
 
-input:checked + .tab-label::after {
+.Acctabs input:checked + .tab-label::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-input:checked ~ .tab-content {
+.Acctabs input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
