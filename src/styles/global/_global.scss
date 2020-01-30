@@ -64,9 +64,6 @@ $clouds: #ecf0f1;
 
 // General
 body {
-  color: $midnight;
-  background: $clouds;
-  padding: 0 1em 1em;
 }
 
 h1 {
@@ -86,18 +83,7 @@ input {
   z-index: -1;
 }
 
-// Layout
-.row {
-  display: flex;
 
-  .col {
-    flex: 1;
-
-    &:last-child {
-      margin-left: 1em;
-    }
-  }
-}
 
 
 
@@ -183,3 +169,15 @@ input:checked {
   background: url(/images/escheresque.png), 
   linear-gradient(180deg, #5f54f1, #4398ee)
 }
+
+
+#slide-0 {
+  background-image: url(http://farm8.staticflickr.com/7347/8731666710_34d07e709e_z.jpg);
+}
+#slide-1 {
+  background-image: url(http://farm8.staticflickr.com/7384/8730654121_05bca33388_z.jpg);
+}
+#slide-2 {
+  background-image: url(http://farm8.staticflickr.com/7382/8732044638_9337082fc6_z.jpg);
+}
+
